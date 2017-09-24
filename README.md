@@ -26,6 +26,6 @@ a create-jms-response step returns a response from regurgitator, allowing ``resp
     "jms-redelivered": true,
     "jms-priority": 4,
     "jms-reply-to": "queue://other-destination",
-    "jms-timestamp: 1506253192636
+    "jms-timestamp": 1506253192636
 }
 ```
