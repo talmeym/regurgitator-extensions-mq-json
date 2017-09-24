@@ -22,9 +22,9 @@ a create-jms-response step returns a response from regurgitator, allowing ``resp
     "jms-destination: "queue://my-destination",
     "jms-correlation-id": "52908d79-b7c6-4e18-ab13-e991d1b67d8b",
     "jms-delivery-mode": "PERSISTENT",
-    "jms-expiration": "1506253192636",
+    "jms-expiration": 1506253192636,
     "jms-redelivered": true,
-    "jms-priority": "",
+    "jms-priority": 4,
     "jms-reply-to": "queue://other-destination",
     "jms-timestamp: "123456789"
 }
