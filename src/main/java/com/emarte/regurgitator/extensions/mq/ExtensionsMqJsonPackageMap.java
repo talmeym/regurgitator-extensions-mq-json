@@ -6,7 +6,7 @@ package com.emarte.regurgitator.extensions.mq;
 
 import com.emarte.regurgitator.core.AbstractJsonPackageMap;
 
-import java.util.*;
+import java.util.List;
 
 import static java.util.Collections.singletonList;
 
