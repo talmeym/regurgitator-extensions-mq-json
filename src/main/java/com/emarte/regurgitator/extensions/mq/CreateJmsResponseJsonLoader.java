@@ -22,9 +22,9 @@ public class CreateJmsResponseJsonLoader implements JsonLoader<CreateJmsResponse
         String type = loadOptionalStr(jsonObject, JMS_TYPE);
         String destination = loadOptionalStr(jsonObject, JMS_DESTINATION);
         String correlationId = loadOptionalStr(jsonObject, JMS_CORRELATION_ID);
-        Integer deliveryMode = loadOptionalInt(jsonObject, JMS_DELIVERY_MODE);
+        Long deliveryMode = loadOptionalLong(jsonObject, JMS_DELIVERY_MODE);
         Long expiration = loadOptionalLong(jsonObject, JMS_EXPIRATION);
-        Integer priority = loadOptionalInt(jsonObject, JMS_PRIORITY);
+        Long priority = loadOptionalLong(jsonObject, JMS_PRIORITY);
         Boolean redelivered = loadOptionalBool(jsonObject, JMS_REDELIVERED);
         String replyTo = loadOptionalStr(jsonObject, JMS_REPLY_TO);
         Long timestamp = loadOptionalLong(jsonObject, JMS_TIMESTAMP);
