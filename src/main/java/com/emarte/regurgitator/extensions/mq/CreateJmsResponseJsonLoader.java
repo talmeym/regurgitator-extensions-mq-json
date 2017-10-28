@@ -9,7 +9,7 @@ import net.sf.json.JSONObject;
 
 import java.util.Set;
 
-import static com.emarte.regurgitator.core.JsonConfigUtil.loadOptionalStr;
+import static com.emarte.regurgitator.core.JsonConfigUtil.*;
 import static com.emarte.regurgitator.extensions.mq.ExtensionsMqConfigConstants.*;
 
 public class CreateJmsResponseJsonLoader implements JsonLoader<CreateJmsResponse> {
@@ -22,12 +22,12 @@ public class CreateJmsResponseJsonLoader implements JsonLoader<CreateJmsResponse
         String type = loadOptionalStr(jsonObject, JMS_TYPE);
         String destination = loadOptionalStr(jsonObject, JMS_DESTINATION);
         String correlationId = loadOptionalStr(jsonObject, JMS_CORRELATION_ID);
-        String deliveryMode = loadOptionalStr(jsonObject, JMS_DELIVERY_MODE);
-        String expiration = loadOptionalStr(jsonObject, JMS_EXPIRATION);
-        String priority = loadOptionalStr(jsonObject, JMS_PRIORITY);
-        String redelivered = loadOptionalStr(jsonObject, JMS_REDELIVERED);
+        Integer deliveryMode = loadOptionalInt(jsonObject, JMS_DELIVERY_MODE);
+        Long expiration = loadOptionalLong(jsonObject, JMS_EXPIRATION);
+        Integer priority = loadOptionalInt(jsonObject, JMS_PRIORITY);
+        Boolean redelivered = loadOptionalBool(jsonObject, JMS_REDELIVERED);
         String replyTo = loadOptionalStr(jsonObject, JMS_REPLY_TO);
-        String timestamp = loadOptionalStr(jsonObject, JMS_TIMESTAMP);
+        Long timestamp = loadOptionalLong(jsonObject, JMS_TIMESTAMP);
         return new CreateJmsResponse(response, messageId, type, destination, correlationId, deliveryMode, expiration, priority, redelivered, replyTo, timestamp);
     }
 }
