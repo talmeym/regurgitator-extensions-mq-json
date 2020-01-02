@@ -17,7 +17,7 @@ a create-jms-response step returns a response from regurgitator, allowing ``resp
     "kind": "create-jms-response",
     "name": "jms-response-creator",
     "source": "response-param",
-    "jms-message-id": "messageid",
+    "jms-message-id": "message-id",
     "jms-type": "my-jms-type",
     "jms-destination": "queue://my-destination",
     "jms-correlation-id": "52908d79-b7c6-4e18-ab13-e991d1b67d8b",
