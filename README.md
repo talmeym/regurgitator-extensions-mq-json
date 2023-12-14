@@ -10,7 +10,7 @@ read more about regurgitator in json here: [regurgitator-core-json](http://githu
 
 ### create-jms-response
 
-a create-jms-response step returns a response from regurgitator, allowing ``response-metadata`` parameters to be set, eg. ``jms-destination``, ``correlation-id`` and ``jms-type``:
+a create-jms-response step returns a response from regurgitator, allowing ``response-metadata`` parameters to be set, e.g. ``jms-destination``, ``correlation-id`` and ``jms-type``:
 
 ```json
 {
