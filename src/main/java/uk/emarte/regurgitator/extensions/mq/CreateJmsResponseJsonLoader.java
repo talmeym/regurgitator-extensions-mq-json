@@ -2,18 +2,18 @@
  * Copyright (C) 2017 Miles Talmey.
  * Distributed under the MIT License (license terms are at http://opensource.org/licenses/MIT).
  */
-package com.emarte.regurgitator.extensions.mq;
+package uk.emarte.regurgitator.extensions.mq;
 
-import com.emarte.regurgitator.core.CreateResponse;
-import com.emarte.regurgitator.core.CreateResponseJsonLoader;
-import com.emarte.regurgitator.core.JsonLoader;
-import com.emarte.regurgitator.core.RegurgitatorException;
+import uk.emarte.regurgitator.core.CreateResponse;
+import uk.emarte.regurgitator.core.CreateResponseJsonLoader;
+import uk.emarte.regurgitator.core.JsonLoader;
+import uk.emarte.regurgitator.core.RegurgitatorException;
 import net.sf.json.JSONObject;
 
 import java.util.Set;
 
-import static com.emarte.regurgitator.core.JsonConfigUtil.*;
-import static com.emarte.regurgitator.extensions.mq.ExtensionsMqConfigConstants.*;
+import static uk.emarte.regurgitator.core.JsonConfigUtil.*;
+import static uk.emarte.regurgitator.extensions.mq.ExtensionsMqConfigConstants.*;
 
 public class CreateJmsResponseJsonLoader implements JsonLoader<CreateJmsResponse> {
     private final CreateResponseJsonLoader responseJsonLoader = new CreateResponseJsonLoader();
