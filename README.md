@@ -60,7 +60,8 @@ If instead you wish the ``jms-call`` step to create an independent jms message, 
     {
       "kind": "create-parameter",
       "name": "request-metadata:jms-expiration",
-      "value": "36000"
+      "value": "36000",
+      "type": "NUMBER"
     },
     {
       "kind": "jms-call",
