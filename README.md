@@ -77,7 +77,6 @@ a create-jms-response step returns a response from regurgitator, allowing ``resp
 ```json
 {
     "kind": "create-jms-response",
-    "name": "jms-response-creator",
     "source": "response-param",
     "jms-message-id": "message-id",
     "jms-type": "my-jms-type",
