@@ -6,8 +6,6 @@ start your reading here: [regurgitator-all](https://talmeym.github.io/regurgitat
 
 read more about regurgitator in json here: [regurgitator-core-json](https://talmeym.github.io/regurgitator-core-json#json-configuration-of-regurgitator)
 
-[``apidocs``](https://regurgitator.emarte.uk/apidocs/regurgitator-extensions-mq-json/0.1.3/)
-
 ## extension mq steps in json
 
 ### jms-call
@@ -93,3 +91,7 @@ a create-jms-response step returns a response from regurgitator, allowing ``resp
     "jms-timestamp": 1506253192636
 }
 ```
+
+---
+
+api docs: [``0.1.4``](https://regurgitator.emarte.uk/apidocs/regurgitator-extensions-mq-json/0.1.4/){:target="_blank"} [``0.1.3``](https://regurgitator.emarte.uk/apidocs/regurgitator-extensions-mq-json/0.1.3/){:target="_blank"} [``0.1.2``](https://regurgitator.emarte.uk/apidocs/regurgitator-extensions-mq-json/0.1.2/){:target="_blank"}
